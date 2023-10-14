@@ -36,9 +36,9 @@
 // |  -  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  -  |
 //                   | MO1 | GUI | SPC |   | SPC | SPC  | SPC |
                         bindings = <
- &trans  &kp Q        &kp W       &kp E        &kp R       &kp T  &kp Y &kp U        &kp I        &kp O       &kp P           &trans
+ &trans  &lt 3 Q      &kp W       &kp E        &kp R       &kp T  &kp Y &kp U        &kp I        &kp O       &lt 3 P         &trans
  &trans  &bhm LSHFT A &bhm LGUI S &bhm LCTRL D &bhm LALT F &kp G  &kp H &bhm RALT J  &bhm RCTRL K &bhm RGUI L &bhm RSHFT SEMI &trans
- &trans  &lt 3 Z      &kp X       &kp C        &kp V       &kp B  &kp N &kp M        &kp COMMA    &kp DOT     &lt 3 FSLH      &trans
+ &trans  &lt 4 Z      &kp X       &kp C        &kp V       &kp B  &kp N &kp M        &kp COMMA    &kp DOT     &lt 4 FSLH      &trans
                       &mo 1       &kp LGUI     &kp SPACE                &kp SPACE    &kp SPACE    &kp SPACE 
                         >;
                 };
@@ -85,6 +85,21 @@
    &trans  &kp GRAVE &kp PLUS &kp MINUS &kp EQUAL &trans    &trans    &kp UNDER &kp LPAR &kp RPAR &kp BSLH &trans
    &trans  &trans    &kp STAR &kp SLASH &kp BSLH  &trans    &kp TILDE &kp PIPE  &kp LBRC &kp RBRC &trans   &trans
                              &kp LGUI   &trans    &kp SPACE                      &kp RET         &trans   &kp RALT
+                        >;
+                };
+
+                // 4
+                num_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &trans &trans &kp N7 &kp N8 &kp N9 &trans &trans &kp N7 &kp N8 &kp N9 &trans &trans 
+   &trans &trans &kp N4 &kp N5 &kp N6 &trans &trans &kp N4 &kp N5 &kp N6 &trans &trans
+   &trans &trans &kp N1 &kp N2 &kp N3 &trans &trans &kp N1 &kp N2 &kp N3 &trans  &trans
+                             &kp LGUI   &trans    &kp SPACE           &kp RET &kp N0 &kp RALT
                         >;
                 };
         };
