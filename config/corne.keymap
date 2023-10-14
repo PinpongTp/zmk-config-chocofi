@@ -76,7 +76,19 @@
         compatible = "zmk,combos";
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <7 18>;
+            key-positions = <8 19>;
+            bindings = <&kp BSPC>;
+        };
+    };
+};
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_ent {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
             bindings = <&kp BSPC>;
         };
     };
