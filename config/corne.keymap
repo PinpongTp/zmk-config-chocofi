@@ -93,7 +93,7 @@
         combo_ent {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp BSPC>;
+            bindings = <&kp RET>;
         };
     };
 };
