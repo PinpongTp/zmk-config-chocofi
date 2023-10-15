@@ -46,7 +46,7 @@
                 // 1 media
                 media_layer {
 // -----------------------------------------------------------------------------------------
-// |---| BT1 | BT2 | BT3 | BT4 | BT5 |xxx| LFT | DWN |  UP | RGT |     |---|
+// |---| BT1 | BT2 | BT3 | BT4 | BT5 |xxx|     |     |     |     |     |---|
 // |---|     |     |     |     |     |xxx|     |     |     |     |     |---|
 // |---|     |     |     |     |     |xxx|     |     |     |     |     |---|
 //                 | GUI |     | SPC |   | ENT |     | ALT |
@@ -59,12 +59,12 @@
                 };
 
                 // 2
-                raise_layer {
+                sd_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |    |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |    |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                  | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 /**/  &kp LEFT    &kp DOWN &kp UP    &kp RIGHT &trans  &trans
    &trans   &trans       &trans       &trans       &trans       &trans       /**/  &trans      &trans   &trans    &trans    &trans  &trans 
@@ -76,10 +76,10 @@
                 // 3
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |    |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |    |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                  | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp LBKT &kp RBKT &kp DQT &trans 
    &trans  &kp GRAVE &kp PLUS &kp MINUS &kp EQUAL &trans    &trans    &kp UNDER &kp LPAR &kp RPAR &kp SQT &trans
