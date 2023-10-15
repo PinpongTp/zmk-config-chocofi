@@ -25,5 +25,5 @@ COMBO(layer_sd, &mo 2, 14 15, NUM)
 
 
 // keyboard
-COMBO(left_enter, &kb RET,  2 15, NUM)
-COMBO(left_bspc,  &kb BSPC, 3 16, NUM)
+//COMBO(left_enter, &kb RET,  2 15, NUM)
+//;COMBO(left_bspc,  &kb BSPC, 3 16, NUM)
