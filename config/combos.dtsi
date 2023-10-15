@@ -30,6 +30,7 @@ compatible = "zmk,combos";
 
 /* layer */
 COMBO(layer_sd,    &mo 2,    14 15)
+COMBO(layer_fn,    &mo 6,    14 15 16)
 
 /* keyboard */
 COMBO(left_esc,    &kp ESC,   2  3)
