@@ -1,50 +1,41 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define XXX &none
+#define ___ &trans
+#define _X &none
+#define X_ &none
+
 / {
+  behaviors {
+    bhm: balanced_homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;    // <---[[moderate duration]]
+      quick-tap-ms = <200>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+    }; 
+  };
 
+  keymap {
+    compatible = "zmk,keymap";
 
-        behaviors {
-               bhm: balanced_homerow_mods {
-                      compatible = "zmk,behavior-hold-tap";
-                      label = "HOMEROW_MODS";
-                      #binding-cells = <2>;
-                      tapping-term-ms = <200>;    // <---[[moderate duration]]
-                      quick-tap-ms = <200>;
-                      flavor = "balanced";
-                      bindings = <&kp>, <&kp>;
-               }; 
-        };
-
-        keymap {
-                compatible = "zmk,keymap";
-
-// -----------------------------------------------------------------------------------------
-// |  0  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  10  | 11 |
-// |  12 |  13 |  14 |  15 |  16 |  17 |   |  18 |  19  |  20 |  21 |  22  | 23 |
-// |  24 |  25 |  26 |  27 |  28 |  29 |   |  30  |  31 |  32 |  33 |  34  | 35 |
-
-                // 0
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  -  |  Q  |  W  |  E  |  R  |  T  |xxx|  Y  |  U   |  I  |  O  |  P  |  -  |
-// |  -  |  A  |  S  |  D  |  F  |  G  |xxx|  H  |  J   |  K  |  L  |  ;  |  -  |
-// |  -  |  Z  |  X  |  C  |  V  |  B  |xxx|  N  |  M   |  ,  |  .  |  /  |  -  |
-//                   | MO1 | GUI | SPC |xxx| SPC | SPC  | SPC |
-                        bindings = <
- &trans  &lt 4 Q      &kp W       &kp E        &kp R       &kp T  &kp Y &kp U        &kp I        &kp O       &lt 4 P         &trans
- &trans  &bhm LSHFT A &bhm LGUI S &bhm LCTRL D &bhm LALT F &kp G  &kp H &bhm RALT J  &bhm RCTRL K &bhm RGUI L &bhm RSHFT SEMI &trans
- &trans  &lt 3 Z      &kp X       &kp C        &kp V       &kp B  &kp N &kp M        &kp COMMA    &kp DOT     &lt 3 FSLH      &trans
-                      &mo 1       &kp LGUI     &kp SPACE                &kp SPACE    &kp SPACE    &kp SPACE 
-                        >;
-                };
+    default_layer { // 0
+      bindings = <
+      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+      _X      &lt 4 Q       &kp W          &kp E        &kp R         &kp T             &kp Y         &kp U         &kp I          &kp O       &lt 4 P     X_
+      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+      _X   &bhm LSHFT A  &bhm LGUI S   &bhm LCTRL D  &bhm LALT F      &kp G             &kp H      &bhm RALT J   &bhm RCTRL K  &bhm RGUI L &bhm RSHFT SEMI X_
+      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+      _X     &lt 3 Z       &kp X          &kp C         &kp V         &kp B             &kp N         &kp M        &kp COMMA    &kp DOT       &lt 3 FSLH   X_
+      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                                          &mo 1       &kp LGUI      &kp SPACE          &kp SPACE    &kp SPACE       &mo 1
+      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+      >;
+    };
 
                 // 1 media
                 media_layer {
