@@ -40,5 +40,7 @@ COMBO(right_enter, &kp RET,  20 21)
 COMBO(right_bspc,  &kp BSPC,  8 19)
 
 /* stickey */
-COMBO(tab_shift,   &sk LSHFT, 13 15)
-COMBO(tab_gui,     &sk LGUI,  14 16)
+COMBO(tab_shift,   &sk LSHFT, 13 15) // A D
+COMBO(tab_gui,     &sk LGUI,  14 16) // S F
+COMBO(tab_ctrl,    &sk LCTRL, 15 16) // D F
+COMBO(tab_alt,     &sk LALT,  13 16) // D F
