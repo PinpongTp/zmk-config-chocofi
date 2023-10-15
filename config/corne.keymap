@@ -20,6 +20,10 @@
     }; 
   };
 
+  combos {
+    #include "combos.dtsi"
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -119,57 +123,4 @@
                         >;
                 };
         };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <8 19>;
-            bindings = <&kp BSPC>;
-        };
-    };
-};
-
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_ent {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp RET>;
-        };
-    };
-};
-
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp TAB>;
-        };
-    };
-};
-
-
-/ {
-    combos {
-      #include "combos.dtsi"
-    };
 };
