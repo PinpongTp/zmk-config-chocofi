@@ -43,4 +43,4 @@ COMBO(right_bspc,  &kp BSPC,  8 19)
 COMBO(tab_shift,   &sk LSHFT, 13 15) // A D
 COMBO(tab_gui,     &sk LGUI,  14 16) // S F
 COMBO(tab_ctrl,    &sk LCTRL, 15 16) // D F
-COMBO(tab_alt,     &sk LALT,  13 16) // D F
+COMBO(tab_alt,     &sk LALT,  13 16) // A F
