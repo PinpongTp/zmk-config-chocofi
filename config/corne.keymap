@@ -157,7 +157,7 @@
         combo_sd {
             timeout-ms = <50>;
             key-positions = <14 15>;
-            bindings = <mo 3>;
+            bindings = <&mo 3>;
         };
     };
 };
