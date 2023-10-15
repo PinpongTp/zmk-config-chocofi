@@ -12,18 +12,25 @@
 
 compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+  };
+
 
 // combo layer
-COMBO(layer_sd, &mo 2, 14 15, NUM)
+COMBO(layer_sd, &mo 2, 14 15)
 
 
 // keyboard
-//COMBO(left_enter, &kb RET,  2 15, NUM)
-//;COMBO(left_bspc,  &kb BSPC, 3 16, NUM)
+COMBO(left_enter, &kb RET,  2 15)
+COMBO(left_bspc,  &kb BSPC, 3 16)
+
