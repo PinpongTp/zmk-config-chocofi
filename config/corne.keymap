@@ -18,6 +18,22 @@
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     }; 
+
+    td_shft: tap_dance_0 {
+      compatible = "zmk,behavior-tap-dance";
+      label = "TAP_DANCE_SHIFT";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp LSHFT>;
+    };
+
+    td_gui: tap_dance_0 {
+      compatible = "zmk,behavior-tap-dance";
+      label = "TAP_DANCE_GUI";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp LGUI>;
+    };
   };
 
   combos {
