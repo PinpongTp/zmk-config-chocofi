@@ -47,6 +47,9 @@ COMBO(left_bspc,   &kp BSPC,  3 16)
 COMBO(right_enter, &kp RET,  20 21)
 CBTIM(right_bspc,  &kp BSPC,  8 19, 30)
 
+/* media */
+LAYCB(cb_mute,        &kp K_MUTE,32 33, 1)
+
 /* stickey */
 COMBO(tab_shift,   &sk LSHFT, 13 15) // A D
 COMBO(tab_gui,     &sk LGUI,  14 16) // S F
