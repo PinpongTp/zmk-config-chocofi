@@ -34,8 +34,6 @@ COMBO(layer_sd, &mo 2, 14 15)
 
 
 /* keyboard */
-/*
-// COMBO(left_enter, &kb RET,  2 15)
-// COMBO(left_bspc,  &kb BSPC, 3 16)
-*/
+COMBO(left_enter, &kp RET,  2 15)
+COMBO(left_bspc,  &kp BSPC, 3 16)
 
