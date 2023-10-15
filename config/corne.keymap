@@ -10,9 +10,6 @@
 
 / {
 
-        combos {
-          #include "combos.dtsi"
-        };
 
         behaviors {
                bhm: balanced_homerow_mods {
@@ -172,3 +169,9 @@
     };
 };
 
+
+/ {
+    combos {
+      #include "combos.dtsi"
+    };
+}
