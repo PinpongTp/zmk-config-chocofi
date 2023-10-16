@@ -54,12 +54,12 @@ CBTIM(right_bspc,  &bspc_del, 8 19, 30)
 LAYCB(cb_mute,     &kp K_MUTE,32 33, 1)
 
 /* stickey */
-COMBO(r_tab_shift, &sk LSHFT, 13 15) // A D
-COMBO(r_tab_gui,   &sk LGUI,  14 16) // S F
-COMBO(r_tab_ctrl,  &sk LCTRL, 15 16) // D F
-COMBO(r_tab_alt,   &sk LALT,  13 16) // A F
+COMBO(l_tab_shift, &sk LSHFT, 13 15) // A D
+COMBO(l_tab_gui,   &sk LGUI,  14 16) // S F
+COMBO(l_tab_ctrl,  &sk LCTRL, 15 16) // D F
+COMBO(l_tab_alt,   &sk LALT,  13 16) // A F
 
-//COMBO(l_tab_shift, &sk LSHFT, 13 15) // K :
-COMBO(l_tab_gui,   &sk LGUI,  14 16) // J L
-//COMBO(l_tab_ctrl,  &sk LCTRL, 15 16) // J K
-//COMBO(l_tab_alt,   &sk LALT,  13 16) // J :
+//COMBO(r_tab_shift, &sk RSHFT, 20 23) // K :
+COMBO(r_tab_gui,   &sk RGUI,  19 22) // J L
+//COMBO(r_tab_ctrl,  &sk RCTRL, 19 20) // J K
+//COMBO(r_tab_alt,   &sk RALT,  19 23) // J :
