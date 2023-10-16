@@ -37,21 +37,29 @@ compatible = "zmk,combos";
 
 /* layer */
 COMBO(layer_sd,    &mo 2,    14 15)
-COMBO(layer_fn,    &mo 6,    14 15 16)
+COMBO(l_layer_fn,  &sl 6,    14 15 16)
+COMBO(r_layer_fn,  &sl 6,    19 20 21)
 
 /* keyboard */
 CBTIM(left_esc,    &kp ESC,   2  3, 30)
 COMBO(left_enter,  &kp RET,   2 15)
 COMBO(left_tab,    &kp TAB,  26 27)
 COMBO(left_bspc,   &bspc_del, 3 16)
+COMBO(right_esc,   &kp ESC,   8  9)
 COMBO(right_enter, &kp RET,  20 21)
+COMBO(right_tab,   &kp TAB,  32 33)
 CBTIM(right_bspc,  &bspc_del, 8 19, 30)
 
 /* media */
 LAYCB(cb_mute,     &kp K_MUTE,32 33, 1)
 
 /* stickey */
-COMBO(tab_shift,   &sk LSHFT, 13 15) // A D
-COMBO(tab_gui,     &sk LGUI,  14 16) // S F
-COMBO(tab_ctrl,    &sk LCTRL, 15 16) // D F
-COMBO(tab_alt,     &sk LALT,  13 16) // A F
+COMBO(r_tab_shift, &sk LSHFT, 13 15) // A D
+COMBO(r_tab_gui,   &sk LGUI,  14 16) // S F
+COMBO(r_tab_ctrl,  &sk LCTRL, 15 16) // D F
+COMBO(r_tab_alt,   &sk LALT,  13 16) // A F
+
+//COMBO(l_tab_shift, &sk LSHFT, 13 15) // K :
+COMBO(l_tab_gui,   &sk LGUI,  14 16) // J L
+//COMBO(l_tab_ctrl,  &sk LCTRL, 15 16) // J K
+//COMBO(l_tab_alt,   &sk LALT,  13 16) // J :
