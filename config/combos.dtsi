@@ -46,9 +46,9 @@ CBTIM(caplock,     &kp CAPS, 13 22, 30)
 COMBO(left_enter,  &kp RET,   2 15)
 COMBO(left_tab,    &kp TAB,  26 27)
 COMBO(left_bspc,   &bspc_del, 3 16)
-COMBO(right_esc,   &kp ESC,   8  9)
+CBTIM(right_esc,   &kp ESC,   8  9, 30)
 COMBO(right_enter, &kp RET,  20 21)
-COMBO(right_tab,   &kp TAB,  32 33)
+CBTIM(right_tab,   &kp TAB,  32 33, 30)
 CBTIM(right_bspc,  &bspc_del, 8 19, 30)
 
 /* media */
