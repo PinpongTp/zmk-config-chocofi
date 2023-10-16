@@ -42,6 +42,7 @@ COMBO(r_layer_fn,  &sl 6,    19 20 21)
 
 /* keyboard */
 CBTIM(left_esc,    &kp ESC,   2  3, 30)
+CBTIM(caplock,     &kp CAPS, 13 22, 30)
 COMBO(left_enter,  &kp RET,   2 15)
 COMBO(left_tab,    &kp TAB,  26 27)
 COMBO(left_bspc,   &bspc_del, 3 16)
