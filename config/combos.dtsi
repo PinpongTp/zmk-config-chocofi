@@ -3,7 +3,7 @@
   │  1   2   3   4   5 │ │  6   7   8   9  10 │
   │ 13  14  15  16  17 │ │ 18  19  20  21  22 │
   │ 25  26  27  28  29 │ │ 30  31  32  33  34 │
-  ╰───────╮ 35  36  37 │ │ 38  39  40 ╭───────╯
+  ╰───────╮ 36  37  38 │ │ 39  40  41 ╭───────╯
           ╰────────────╯ ╰────────────╯
   ╭────────────────────╮ ╭────────────────────╮
   │  Q   W   E   R  T  │ │  Y   U   I   O   P │
@@ -39,8 +39,8 @@ compatible = "zmk,combos";
 COMBO(layer_sd,    &mo 2,    14 15)
 COMBO(l_layer_fn,  &sl 6,    14 15 16)
 COMBO(r_layer_fn,  &sl 6,    19 20 21)
-COMBO(l_layer_sys, &mo 5,    25 35)
-COMBO(r_layer_sys, &mo 5,    34 40)
+COMBO(l_layer_sys, &mo 5,    25 36)
+COMBO(r_layer_sys, &mo 5,    34 41)
 
 /* keyboard */
 CBTIM(left_esc,    &kp ESC,   2  3, 30)
