@@ -44,6 +44,7 @@
       label = "mouse_m";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
+      wait-ms = <0>;
       bindings = <&kp KP_MINUS &kp KP_N5>;
     };
 
@@ -51,6 +52,7 @@
       label = "mouse_r";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
+      wait-ms = <0>;
       bindings = <&kp KP_ASTERISK &kp KP_N5>;
     };
 
