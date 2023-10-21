@@ -39,18 +39,21 @@
       #binding-cells = <0>;
       bindings = <&kp KP_SLASH &kp KP_N5>;
     };
+
     mouse_m: mouse_m {
       label = "ZM_zed_em_kay";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp KP_MINUS &kp KP_N5>;
     };
+
     mouse_r: mouse_r {
       label = "ZM_zed_em_kay";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp KP_ASTERISK &kp KP_N5>;
     };
+
     tg_mouse: tg_mouse {
       label = "ZM_zed_em_kay";
       compatible = "zmk,behavior-macro";
