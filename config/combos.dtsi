@@ -56,10 +56,10 @@ CBTIM(right_tab,   &kp TAB,  32 33, 30)
 CBTIM(right_bspc,  &bspc_del, 8 19, 30)
 
 /+ mouse +/
-LAYCB(mouse_L_T,  &kp KP_N7,  8 19, 7)
-LAYCB(mouse_L_B,  &kp KP_N1, 19 20, 7)
-LAYCB(mouse_R_T,  &kp KP_N9,  8 21, 7)
-LAYCB(mouse_R_B,  &kp KP_N3, 20 21, 7)
+LAYCB(mouse_l_t,  &kp KP_N7,  8 19, 7)
+LAYCB(mouse_l_b,  &kp KP_N1, 19 20, 7)
+LAYCB(mouse_r_t,  &kp KP_N9,  8 21, 7)
+LAYCB(mouse_r_b,  &kp KP_N3, 20 21, 7)
 
 /* media */
 LAYCB(cb_mute,     &kp K_MUTE,32 33, 1)
