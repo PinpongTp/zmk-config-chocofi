@@ -33,11 +33,23 @@
   };
 
   macros {
-    m_btn_1: m_btn_1 {
+    mouse_l: mouse_l {
       label = "ZM_zed_em_kay";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings = <&kp KP_SLASH &kp KP_N5>;
+    };
+    mouse_m: mouse_m {
+      label = "ZM_zed_em_kay";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp KP_MINUS &kp KP_N5>;
+    };
+    mouse_r: mouse_r {
+      label = "ZM_zed_em_kay";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp KP_ASTERISK &kp KP_N5>;
     };
   };
 
@@ -175,7 +187,7 @@
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       _X       ___           ___           ___           ___           ___               ___           ___           ___           ___           ___       X_
       // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                           ___           ___           ___             &m_btn_1        ___           ___
+                                           ___           ___           ___             &mouse_l     &mouse_m      &mouse_r
       //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
