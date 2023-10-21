@@ -55,7 +55,7 @@ COMBO(right_enter, &kp RET,  20 21)
 CBTIM(right_tab,   &kp TAB,  32 33, 30)
 CBTIM(right_bspc,  &bspc_del, 8 19, 30)
 
-/+ mouse +/
+/* mouse */
 LAYCB(mouse_l_t,  &kp KP_N7,  8 19, 7)
 LAYCB(mouse_l_b,  &kp KP_N1, 19 20, 7)
 LAYCB(mouse_r_t,  &kp KP_N9,  8 21, 7)
