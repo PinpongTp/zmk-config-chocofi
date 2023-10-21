@@ -62,7 +62,7 @@ LAYCB(mouse_r_t,  &kp KP_N9,  8 21, 7)
 LAYCB(mouse_r_b,  &kp KP_N3, 20 21, 7)
 
 /* media */
-LAYCB(cb_mute,     &kp K_MUTE,32 33, 1)
+LAYCB(cb_mute,    &kp K_MUTE,32 33, 1)
 
 /* stickey */
 COMBO(l_tab_shift, &sk LSHFT, 13 15) // A D
