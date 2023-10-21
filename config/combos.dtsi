@@ -42,6 +42,7 @@ COMBO(r_layer_fn,  &sl 6,    19 20 21)
 COMBO(l_layer_sys, &mo 5,    25 36)
 COMBO(r_layer_sys, &mo 5,    34 41)
 COMBO(l_layer_me,  &mo 1,    36 37)
+COMBO(layer_mouse, &mo 7,    13 14)
 
 /* keyboard */
 CBTIM(left_esc,    &kp ESC,   2  3, 30)
