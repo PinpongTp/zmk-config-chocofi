@@ -37,7 +37,7 @@
       label = "mouse_l";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp KP_SLASH &kp KP_N5>;
+      bindings = <&kp KP_N5>;
     };
 
     mouse_m: mouse_m {
@@ -45,7 +45,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       wait-ms = <0>;
-      bindings = <&kp KP_MINUS &kp KP_N5>;
+      bindings = <&kp KP_MINUS>;
     };
 
     mouse_r: mouse_r {
@@ -53,7 +53,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       wait-ms = <0>;
-      bindings = <&kp KP_ASTERISK &kp KP_N5>;
+      bindings = <&kp KP_ASTERISK>;
     };
 
     tg_mouse: tg_mouse {
@@ -198,7 +198,7 @@
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       _X       ___           ___           ___           ___           ___            &kp KP_DOT    &kp KP_N0        ___           ___           ___       X_
       // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                           ___           ___           ___             &mouse_l     &mouse_m      &mouse_r
+                                           ___           ___        &kp KP_N5          &mouse_l     &mouse_m      &mouse_r
       //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
