@@ -71,6 +71,6 @@ COMBO(l_tab_ctrl,  &sk LCTRL, 15 16) // D F
 COMBO(l_tab_alt,   &sk LALT,  13 16) // A F
 
 //COMBO(r_tab_shift, &sk RSHFT, 20 22) // K :
-COMBO(r_tab_gui,   &sk RGUI,  19 21) // J L
+CBTIM(r_tab_gui,   &sk RGUI,  19 21, 30) // J L
 //COMBO(r_tab_ctrl,  &sk RCTRL, 19 20) // J K
 //COMBO(r_tab_alt,   &sk RALT,  19 22) // J :
