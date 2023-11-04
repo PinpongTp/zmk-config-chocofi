@@ -39,7 +39,7 @@ compatible = "zmk,combos";
 
 #define ONECB(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <100>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <8>; \
